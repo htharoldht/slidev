@@ -1,14 +1,15 @@
 @import 'prism-theme-vars/base.css';
-@import 'codemirror-theme-vars/base.css';
-@import 'prism-theme-vars/to-codemirror.css';
+/* @import 'codemirror-theme-vars/base.css';
+@import 'prism-theme-vars/to-codemirror.css'; */
 
 :root {
   --prism-font-family: var(--slidev-code-font-family);
+  --slidev-code-background: var(--prism-background);
 }
 
 html:not(.dark) {
   --prism-foreground: #393a34;
-  --prism-background: #f8f8f8;
+  --prism-background: #ffffff;
   --prism-comment: #a0ada0;
   --prism-string: #b56959;
   --prism-literal: #2f8a89;
@@ -30,7 +31,7 @@ html:not(.dark) {
 
 html.dark {
   --prism-foreground: #d4cfbf;
-  --prism-background: #1b1b1b;
+  --prism-background: #121212;
   --prism-comment: #758575;
   --prism-string: #d48372;
   --prism-literal: #429988;
@@ -55,7 +56,7 @@ html.dark {
 }
 
 pre[class*='language-'] {
-  @apply p-2;
+  @apply rounded-lg shadow-lg object-cover mt-10 p-4;
 }
 
 :not(pre) > code {
@@ -64,11 +65,11 @@ pre[class*='language-'] {
   @apply font-light py-0.5 rounded;
 }
 
-
 :not(pre) > code:before,
 :not(pre) > code:after {
-  content: '`';
-  opacity: 0.50;
+  content: '';
+  padding: 0 0.2em;
+  opacity: 0.5;
 }
 
 :not(pre) > code:before {

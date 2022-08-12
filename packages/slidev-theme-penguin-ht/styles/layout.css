@@ -1,22 +1,105 @@
 :root {
   // default theme color
   // can be overrided by uses `themeConfig` option
-  --slidev-theme-primary: #5d8392;
+  --slidev-theme-primary: #3e5166;
+  --slidev-theme-secondary: #34d399;
 }
 
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
+/* general css here */
+
+html:not(.dark) {
+  /* light mode css here */
+  @apply text-primary;
+}
+
+html.dark {
+  /* dark mode css here */
+  @apply text-gray-200;
 
   h1 {
-    @apply text-6xl leading-20;
+    @apply text-secondary;
   }
+}
+
+.slidev-layout {
+  @apply relative h-full;
+
+  h1 {
+    @apply mb-8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply font-sans font-600 mb-8;
+  }
+
+  ul.emoji-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding-left: 1rem;
+      text-indent: -0.7rem;
+    }
+    li::before {
+      content: '🐧 ';
+    }
+  }
+
+  a {
+    @apply text-primary-500 hover:text-secondary-500 dark:text-gray-50 dark:hover:text-secondary-500 transition ease-in-out duration-300;
+  }
+
+  code {
+    @apply text-secondary-300;
+  }
+
+  table {
+    border-spacing: 0;
+    @apply my-4 w-full;
+  }
+  th {
+    @apply font-title font-600;
+  }
+  td {
+    @apply text-xs leading-2;
+  }
+}
+
+.slidev-layout.fact {
+  @apply text-center grid h-full;
+  h1 {
+    @apply text-8xl font-700;
+  }
+  h1 + p {
+    @apply font-700 text-2xl;
+  }
+}
+
+.slidev-layout.statement {
+  @apply text-center grid h-full;
+
+  h1 {
+    @apply text-6xl font-700;
+  }
+}
+
+.slidev-layout.quote {
+  @apply grid h-full;
 
   h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
+    @apply mt-2;
   }
+}
 
-  p + h2, ul + h2, table + h2 {
-    @apply mt-10;
-  }
+.mermaid:not(.dark) {
+  line-height: 1.5;
+  margin: 0 auto;
 }
