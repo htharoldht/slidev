@@ -1,0 +1,14 @@
+.DS_Store
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+.vscode/
+*.pdf
+*-export
+*.log
+index.html
+.remote-assets
+components.d.ts
+example-export
