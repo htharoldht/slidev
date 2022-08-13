@@ -7,6 +7,6 @@
     "export": "slidev export --dark --output ../ChallengeDaily.pdf"
   },
   "dependencies": {
-    "slidev-theme-penguin-ht": "workspace:^0.1.1"
+    "slidev-theme-penguin-ht": "workspace:^0.1.3"
   }
 }
