@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Dots from './assets/dots.svg'
+import Dots from './assets/dots.svg?component'
 </script>
 <template>
   <div>
