@@ -1,5 +1,5 @@
 ---
-theme: penguin-ht
+theme: ../slidev-theme-penguin-ht
 title: 每日一题
 titleTemplate: '%s - HTHaroldHT'
 favicon: /xyzx.ico
