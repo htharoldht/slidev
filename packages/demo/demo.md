@@ -1,5 +1,5 @@
 ---
-theme: none
+theme: penguin-ht
 title: 每日一题
 titleTemplate: '%s - HTHaroldHT'
 favicon: /xyzx.ico
@@ -24,6 +24,15 @@ layout: intro
 # 每日一题
 
 ## 高等数学
+
+
+---
+layout: default
+---
+
+# 目录
+
+<Toc columns="2"/>
 
 
 ---

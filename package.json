@@ -2,15 +2,22 @@
   "name": "slidev",
   "version": "1.0.0",
   "description": "all my slidev presentations",
-  "main": "index.js",
+  "packageManager": "pnpm@7.9.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "htharoldht <htharoldht@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:htharoldht/slidev.git"
+  },
+  "bugs": "https://github.com/htharoldht/slidev/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "htharoldht",
   "license": "MIT",
   "devDependencies": {
     "@slidev/cli": "^0.34.3",
-    "@slidev/theme-default": "^0.21.2",
-    "playwright-chromium": "^1.25.0"
+    "@slidev/theme-default": "^0.21.2"
   }
 }
