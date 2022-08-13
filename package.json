@@ -11,11 +11,11 @@
     "type": "git",
     "url": "git@github.com:htharoldht/slidev.git"
   },
+  "license": "MIT",
   "bugs": "https://github.com/htharoldht/slidev/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT",
   "devDependencies": {
     "@slidev/cli": "^0.34.3",
     "@slidev/theme-default": "^0.21.2"

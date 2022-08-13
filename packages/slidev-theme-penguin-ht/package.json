@@ -1,6 +1,6 @@
 {
   "name": "slidev-theme-penguin-ht",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "keywords": [
     "slidev-theme",
     "slidev"
@@ -17,6 +17,12 @@
   "license": "MIT",
   "bugs": "https://github.com/htharoldht/slidev/issues",
   "type": "module",
+  "private": false,
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "scripts": {
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
